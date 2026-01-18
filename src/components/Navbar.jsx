@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -14,15 +15,15 @@ const Navbar = () => {
       
       <ul className="hidden md:flex space-x-8 text-ghibli-black font-medium">
         {[
-          { name: 'Home', href: '#' },
-          { name: 'Daily Meals', href: '#daily-menu' },
-          { name: 'Our Chefs', href: '#chefs' },
-          { name: 'Story', href: '#story' }
+          { name: 'Home', path: '/' },
+          { name: 'Daily Meals', path: '/daily-meals' },
+          { name: 'Our Chefs', path: '/#chefs' },
+          { name: 'Story', path: '/#story' }
         ].map((item) => (
           <li key={item.name}>
-            <a href={item.href} className="hover:text-ghibli-green hover:underline decoration-wavy decoration-ghibli-peach underline-offset-4 transition-all">
+            <Link to={item.path} className="hover:text-ghibli-green hover:underline decoration-wavy decoration-ghibli-peach underline-offset-4 transition-all">
               {item.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
