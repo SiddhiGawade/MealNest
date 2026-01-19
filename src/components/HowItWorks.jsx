@@ -33,7 +33,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-24 px-6 relative overflow-hidden bg-white/50">
+    <section id="story" className="py-24 px-6 relative overflow-hidden bg-white/50">
       {/* Decorative dashed line path
       <div className="hidden md:block absolute top-[40%] left-0 right-0 h-1 border-t-4 border-dashed border-ghibli-peach/50 w-full z-0 transform -translate-y-1/2"></div>
        */}
