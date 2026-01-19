@@ -31,8 +31,8 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="text-white font-semibold mb-4 -ml-12">Newsletter</h4>
-          <div className="flex -ml-12">
+          <h4 className="text-white font-semibold mb-4">Newsletter</h4>
+          <div className="flex">
             <input 
               type="email" 
               placeholder="Your email" 
